@@ -1,0 +1,18 @@
+{
+    "name": "itas/putao",
+    "description": "高性能的即时通讯框架",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "itas",
+            "email": "652008158@qq.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Putao\\": "src/"
+        }
+    }
+}
