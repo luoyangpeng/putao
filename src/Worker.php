@@ -124,6 +124,10 @@ class Worker
      */
     public $pingData = '';
 
+    public $serverPort = 9502;
+
+    public $serverAddress = '127.0.0.1';
+
     /**
      * 事件处理类，默认是 Event 类.
      *
@@ -142,7 +146,7 @@ class Worker
 
     public function startServer()
     {
-        $server = new \swoole_websocket_server('127.0.0.1', 9502);
+        $server = new \swoole_websocket_server($this->serverAddress, $this->serverPort);
 
         $server->set([
             'worker_num' => $this->processCount, // 进程数量

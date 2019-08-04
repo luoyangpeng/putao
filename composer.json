@@ -1,7 +1,6 @@
 {
     "name": "itas/putao",
     "description": "高性能的即时通讯框架",
-    "type": "project",
     "license": "MIT",
     "authors": [
         {
