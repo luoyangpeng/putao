@@ -135,13 +135,13 @@ class Worker
      */
     public $eventHandler = 'Putao\Event';
 
-    public static function runAll()
+    public function runAll()
     {
         static::checkSapiEnv();
         static::parseCommand();
         static::displayUI();
 
-        (new static())->startServer();
+        $this->startServer();
     }
 
     public function startServer()
